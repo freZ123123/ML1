@@ -97,6 +97,7 @@ def func_wood():
                                accuracy = metrics['accuracy'],
                                precision = metrics['precision'], recall = metrics['recall'])
 @app.route('/api', methods=['get'])
+
 def get_sort():
     X_new = np.array([[float(request.args.get('rost')),
                        float(request.args.get('ves')),
